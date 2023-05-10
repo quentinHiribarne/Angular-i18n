@@ -2,12 +2,15 @@
   <form (ngSubmit)="onSubmit()" [formGroup]="registerForm" novalidate>
     <mat-card class="shipping-card">
       <mat-card-header class="form-header">
-        <mat-card-title> Create an account </mat-card-title>
+        <mat-card-title i18n="@@form.title"> Create an account </mat-card-title>
       </mat-card-header>
       <mat-card-content>
-        <mat-error *ngIf="!registerResult.success">
+        <mat-error *ngIf="!registerResult.success" i18n="@@form.error">
           {{ registerResult.message }}
         </mat-error>
+        <div *ngIf="registerResult.success" i18n="@@form.success">
+          {{ registerResult.message }}
+        </div>
         <div class="row">
           <div class="col">
             <mat-form-field class="full-width">
@@ -20,6 +23,7 @@
                 !registerForm.get('login')?.valid &&
                 registerForm.get('login')?.touched
               "
+              i18n="@@form.emailInvalid"
             >
               Invalid email
             </mat-error>
@@ -43,18 +47,31 @@
                 registerForm.get('password')?.touched
               "
             >
-              <p>Password must :</p>
+              <p i18n="@@form.passwordInvalid">Password must :</p>
               <ul>
-                <li>Be longer than 8 characters</li>
-                <li>Contain 1 upper case letter</li>
-                <li>Contain 1 special character</li>
+                <li i18n="@@form.passwordInvalidNbCharacters">
+                  Be longer than 8 characters
+                </li>
+                <li i18n="@@form.passwordInvalidUpper">
+                  Contain 1 upper case letter
+                </li>
+                <li i18n="@@form.passwordInvalidSpecial">
+                  Contain 1 special character
+                </li>
               </ul>
             </mat-error>
           </div>
         </div>
       </mat-card-content>
       <mat-card-actions class="form-actions">
-        <button mat-raised-button color="primary" type="submit">Submit</button>
+        <button
+          mat-raised-button
+          color="primary"
+          type="submit"
+          i18n="@@form.submit"
+        >
+          Submit
+        </button>
       </mat-card-actions>
     </mat-card>
   </form>

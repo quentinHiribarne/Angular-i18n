@@ -40,9 +40,11 @@ export class FormComponent {
 
   onSubmit(): void {
     if (this.registerResult.success) {
-      alert('Thanks!');
+      console.log('Success');
+      this.registerResult.message = 'Success form valid';
     } else {
-      alert('Error');
+      console.log('Error');
+      this.registerResult.message = 'Error form invalid';
     }
   }
 }
