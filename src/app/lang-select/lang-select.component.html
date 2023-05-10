@@ -1,7 +1,10 @@
 <mat-form-field appearance="fill">
-  <mat-label i18n="@@lang.title">Lang</mat-label>
-  <mat-select [(value)]="selected">
-    <mat-option value="option1" i18n="@@lang.fr">French</mat-option>
-    <mat-option value="option2" i18n="@@lang.en">English</mat-option>
+  <mat-label i18n="@@lang.title">Lang </mat-label>
+  <mat-select
+    [(value)]="defaultLang"
+    (selectionChange)="changeLocale($event.value)"
+  >
+    <mat-option value="fr" i18n="@@lang.fr">French</mat-option>
+    <mat-option value="en" i18n="@@lang.en">English</mat-option>
   </mat-select>
 </mat-form-field>

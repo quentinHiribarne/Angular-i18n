@@ -1,0 +1,20 @@
+{
+  "app.angularLogo": "Angular Logo",
+  "app.welcomeTitle": "Welcome",
+  "app.title": "{$INTERPOLATION} app is running!",
+  "app.accountTitle": "Account",
+  "app.accountMessage": "Fill the form below to create an account:",
+  "app.svgTitle": "Gray Clouds Background",
+  "form.title": " Create an account ",
+  "form.error": " Error form invalid ",
+  "form.success": " Success form valid ",
+  "form.emailInvalid": " Invalid email ",
+  "form.passwordInvalid": "Password must :",
+  "form.passwordInvalidNbCharacters": " Be longer than 8 characters ",
+  "form.passwordInvalidUpper": " Contain 1 upper case letter ",
+  "form.passwordInvalidSpecial": " Contain 1 special character ",
+  "form.submit": " Submit ",
+  "lang.title": "Lang",
+  "lang.fr": "French",
+  "lang.en": "English"
+}
