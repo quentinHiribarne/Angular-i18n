@@ -3,9 +3,10 @@
   <img
     width="40"
     alt="Angular Logo"
+    i18n-alt="@@app.angularLogo"
     src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg=="
   />
-  <h2>Welcome</h2>
+  <h2 i18n="@@app.welcomeTitle">Welcome</h2>
   <div class="spacer"></div>
   <app-lang-select></app-lang-select>
 </div>
@@ -13,19 +14,19 @@
 <div class="content" role="main">
   <!-- Highlight Card -->
   <div class="card">
-    <h1>{{ title }} app is running!</h1>
+    <h1 i18n="@@app.title">{{ title }} app is running!</h1>
   </div>
 
   <!-- Resources -->
-  <h2>Account</h2>
-  <p>Fill the form below to create an account:</p>
+  <h2 i18n="@@app.accountTitle">Account</h2>
+  <p i18n="@@app.accountMessage">Fill the form below to create an account:</p>
   <app-form></app-form>
 
   <!-- Next Steps -->
-  <h2>Next Steps</h2>
-  <p>What do you want to do next with your app?</p>
+  <h2 i18n="@@app.nextTilte">Next Steps</h2>
+  <p i18n="@@app.nextMessage">What do you want to do next with your app?</p>
 
-  <div>contenu ohlala</div>
+  <div i18n="@@app.nextContent">contenu ohlala</div>
 
   <svg
     id="clouds"
@@ -34,7 +35,7 @@
     height="485.677"
     viewBox="0 0 2611.084 485.677"
   >
-    <title>Gray Clouds Background</title>
+    <title i18n="@@app.svgTitle">Gray Clouds Background</title>
     <path
       id="Path_39"
       data-name="Path 39"
