@@ -6,10 +6,10 @@
       </mat-card-header>
       <mat-card-content>
         <mat-error *ngIf="!registerResult.success" i18n="@@form.error">
-          {{ registerResult.message }}
+          Error form invalid
         </mat-error>
         <div *ngIf="registerResult.success" i18n="@@form.success">
-          {{ registerResult.message }}
+          Success form valid
         </div>
         <div class="row">
           <div class="col">
