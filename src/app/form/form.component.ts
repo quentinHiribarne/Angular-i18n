@@ -9,7 +9,7 @@ import { FormBuilder, Validators } from '@angular/forms';
 })
 export class FormComponent {
   registerResult = {
-    success: false,
+    submited: false,
     message: '',
   };
 
@@ -39,7 +39,9 @@ export class FormComponent {
   });
 
   onSubmit(): void {
-    if (this.registerResult.success) {
+    this.registerResult.submited = true;
+
+    if (this.registerForm.valid) {
       console.log('Success');
       this.registerResult.message = 'Success form valid';
     } else {

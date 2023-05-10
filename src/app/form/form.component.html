@@ -5,10 +5,16 @@
         <mat-card-title i18n="@@form.title"> Create an account </mat-card-title>
       </mat-card-header>
       <mat-card-content>
-        <mat-error *ngIf="!registerResult.success" i18n="@@form.error">
+        <mat-error
+          *ngIf="registerResult.submited && !registerForm.valid"
+          i18n="@@form.error"
+        >
           Error form invalid
         </mat-error>
-        <div *ngIf="registerResult.success" i18n="@@form.success">
+        <div
+          *ngIf="registerResult.submited && registerForm.valid"
+          i18n="@@form.success"
+        >
           Success form valid
         </div>
         <div class="row">
