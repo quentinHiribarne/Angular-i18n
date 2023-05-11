@@ -30,7 +30,7 @@ Implémentez des tests unitaires pour les différents composants et services imp
 
 Run `docker compose up`
 
-### Access to the application
+### Access the app
 
 `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
