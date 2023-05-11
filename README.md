@@ -59,3 +59,38 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ### Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Generate translation files
+
+### Generate english translation file
+
+Run `ng extract-i18n --output-path src/assets/i18n --format json --out-file en.json`.
+
+#### Edit file layout
+
+File look like this:
+
+```json
+{
+  "locale": "en-US",
+  "translations": {
+    "app.angularLogo": "Angular Logo",
+    "app.welcomeTitle": "Welcome",
+    ...
+  }
+}
+```
+
+Keep only the translations part:
+
+```json
+{
+  "app.angularLogo": "Angular Logo",
+  "app.welcomeTitle": "Welcome",
+  ...
+}
+```
+
+### Create french translation file
+
+Copy the english translation file and rename it to `fr.json`. Then translate the content.
